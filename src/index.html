@@ -20,7 +20,7 @@
       <img src="img/logo-RS-final.png" class="rounded img-fluid" alt="Profile">
     </div>
     <div class="container">
-      <p class="text-justify text-light m-0">Chao Bullying es una aplicación mobile y web dirigida a la comunidad escolar con el fin de promover la comunicación
+      <p class="text-justify text-light mr-2 ml-2">Chao Bullying es una aplicación mobile y web dirigida a la comunidad escolar con el fin de promover la comunicación
         y el buen trato entre todas quienes son participes de ella. Los usuarios van a poder leer, comentar y publicar casos,
         con el fin de apoyar y ayudar a todos aquellos que han vivido o estén en un entorno de bullying.
       </p>
@@ -38,25 +38,22 @@
     <div class="container">
       <div class="row">
         <div class="col p-0">
-          <button onclick="signIn()" id="signIn" class="btn mb-2 rounded-0 btn-style text-dark p-3">Sign In</button>
+          <button onclick="signIn()" id="signIn" class="btn mb-2 rounded-0 btn-style text-light p-3">Sign In</button>
         </div>
         <div class="col p-0 pb-4">
-          <button onclick="signUp()" id="signUp" class="btn mb-2 rounded-0 btn-style text-dark p-3">Sign Up</button>
+          <button onclick="signUp()" id="signUp" class="btn mb-2 rounded-0 btn-style text-light p-3">Sign Up</button>
         </div>
       </div>
     </div>
     <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false"
       data-use-continue-as="false"></div>
     <div id="facebookBtn">
-      <button onclick="loginFacebook()" class="btn btn-light" id="loginFacebook">
-        <i class="fab fa-facebook-square"></i> Ingresa con Facebook</button>
+      <button onclick="loginFacebook()" class="btn text-light mb-2" id="loginFacebook">
+        <i class="fab fa-facebook-square text-light"></i> Ingresa con Facebook</button>
     </div>
     <div id="googleBtn">
-      <button onclick="loginGoogle()" class="btn btn-light" id="loginGoogle">
-        <i class="fab fa-google"></i> Ingresa con tu cuenta de Google</button>
-      <a href="#" id="linkPass">
-        ¿Olvidaste tu contraseña?
-      </a>
+      <button onclick="loginGoogle()" class="btn text-light mb-5" id="loginGoogle">
+        <i class="fab fa-google text-light"></i> Ingresa con tu cuenta de Google</button>
     </div>
   </div>
   <!--Div del sidebar-->
@@ -88,29 +85,29 @@
     <!--Sección perfil de usuario-->
     <div id="userData"></div>
     <div id="userData2"></div>
-    <button id="configProfile" onclick="editProfile()">Configuración </button>
+    <button id="configProfile" class="text-light m-2" onclick="editProfile()">Configuración </button>
     <div id="configUser">
       <div>
-        <input type="text" class="inputsProfile" placeholder="Email" id="inputConfigEmail">
+        <input type="text" class="inputsProfile m-2" placeholder="Email" id="inputConfigEmail">
       </div>
       <div>
-        <input type="text" class="inputsProfile" placeholder="Numero teléfonico" id="inputConfigPhone">
+        <input type="text" class="inputsProfile m-2" placeholder="Numero teléfonico" id="inputConfigPhone">
       </div>
       <div>
-        <input type="text" class="inputsProfile" placeholder="Nombre Alumno" id="inputConfigNameStudent">
+        <input type="text" class="inputsProfile m-2" placeholder="Nombre Alumno" id="inputConfigNameStudent">
       </div>
       <div>
-        <input type="text" class="inputsProfile" placeholder="Curso" id="inputConfigCourse">
+        <input type="text" class="inputsProfile m-2" placeholder="Curso" id="inputConfigCourse">
       </div>
-      <button id="configProfile" onclick="editProfile">Configuración </button>
-      <button id="saveInfo" onclick="users()">Guardar</button>
+      <button id="configProfile" class="text-light m-2" onclick="editProfile">Configuración </button>
+      <button id="saveInfo" class="text-light m-2" onclick="users()">Guardar</button>
     </div>
   </div>
   <!--Div del muro-->
   <div id="wallDisplay">
     <div class="container">
       <div class="row">
-        <h3 class="col-12">Noticias de la comunidad escolar</h3>
+        <h3 class="col-12 text-light p-3">Noticias de la comunidad escolar</h3>
       </div>
       <div id="messageDiv">
         <div class="container">
@@ -124,7 +121,7 @@
       </div>
       <div class="container-fluid">
         <div class="row">
-          <button onclick="writeNewPost()" class="btns m-2">Iniciar un tema</button>
+          <button onclick="writeNewPost()" style="background-color: #ffd23f" class="btns m-2 text-light">Iniciar un tema</button>
         </div>
       </div>
       <div class="container" id="editContainer">
@@ -151,7 +148,7 @@
   <div id="articlesDisplay">
     <div class="container-fluid">
       <div class="row">
-        <h3 class="col-12">Artículos</h3>
+        <h3 class="col-12 text-light p-3">Artículos</h3>
       </div>
       <div class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -185,7 +182,7 @@
   <div id="professionalSupportDisplay">
     <div class="container-fluid">
       <div class="row">
-        <h3 class="col-12">Apoyo profesional</h3>
+        <h3 class="col-12 text-light p-3">Apoyo profesional</h3>
       </div>
     </div>
   </div>
@@ -193,7 +190,7 @@
   <div id="talksDisplay">
     <div class="container-fluid">
       <div class="row">
-        <h3 class="col-12">Charlas</h3>
+        <h3 class="col-12 text-light p-3">Charlas</h3>
       </div>
     </div>
   </div>
@@ -201,7 +198,7 @@
   <div id="complaintsDisplay">
     <div class="container-fluid">
       <div class="row">
-        <h3 class="col-12">Denuncias</h3>
+        <h3 class="col-12 text-light p-3">Denuncias</h3>
       </div>
     </div>
   </div>

@@ -1,6 +1,17 @@
 /*Diseño de la página*/
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #00A5E1;
+  width: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+ color:white;
+}
+
+button {
+  border-radius: 3px;
+  background-color: #E8910C;
 }
 
 /*login*/
@@ -10,8 +21,6 @@ body {
 }
 
 #logIn {
-  background-color: #00A5E1;
-  width: 100%;
   text-align: center;
 }
 
@@ -31,13 +40,15 @@ body {
 }
 
 #loginFacebook {
-  width: 100%;
+  width: 80%;
   height: 2em; 
+  background-color: #4267B2;
 }
 
 #loginGoogle {
-  width: 100%;
+  width: 80%;
   height: 2em;
+  background-color: #D64937;
 }
 
 #linkPass {
@@ -61,7 +72,6 @@ body {
 /*sidebar*/
 #sidebar {
   display: none;
-  background: #00A5E1;
 }
 
 #sideMenu {
