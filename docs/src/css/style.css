@@ -1,0 +1,168 @@
+/*Diseño de la página*/
+body {
+  background-color: #00A5E1;
+  width: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+ color:white;
+}
+
+button {
+  border-radius: 3px;
+  background-color: #E8910C;
+}
+
+/*login*/
+.btns {
+  width: 95%;
+  height: 2.5em;
+}
+
+#logIn {
+  text-align: center;
+}
+
+#signIn {
+  width: 100%;
+  background: #ee4266;
+}
+
+#signUp {
+  width: 100%;
+  background: #ffd23f; 
+}
+
+#titleNav {
+  color: white;
+  font-size: 1.5em;
+}
+
+#loginFacebook {
+  width: 80%;
+  height: 2em; 
+  background-color: #4267B2;
+}
+
+#loginGoogle {
+  width: 80%;
+  height: 2em;
+  background-color: #D64937;
+}
+
+#linkPass {
+  color: white;
+}
+
+.inputsProfile {
+  text-align: center;
+  padding: 5px;
+  margin: 2px;
+}
+
+#userData {
+  font-size: 25px;
+}
+
+#userData2 {
+  font-size: 17px;
+}
+
+/*sidebar*/
+#sidebar {
+  display: none;
+}
+
+#sideMenu {
+  background: #ee4266;
+  z-index: 1;
+}
+
+.nav-link {
+  text-decoration-color: white;
+  font-weight: bold;
+}
+
+/*divs ocultos con difetentes "paginas"*/
+#profile {
+  display: none;
+}
+
+#wallDisplay {
+  display:none;
+}
+
+#articlesDisplay {
+  display: none;
+}
+
+#professionalSupportDisplay {
+  display: none;
+}
+
+#talksDisplay {
+  display: none;
+}
+
+#complaintsDisplay {
+  display: none;
+}
+
+#messageDiv {
+  display: none;
+}
+
+#editContainer{
+  display: none;
+}
+
+/*Menú lateral con el Navbar*/
+.menu{
+  position: absolute;
+  top:0;
+  height: 100vh; 
+  width: 70vw;  
+  transition: 0.5s ease-out;
+  z-index: 1;
+}
+
+.menu_closed{
+  left: -70vw;
+}
+
+.menu_open{
+  left: 0;
+}
+
+.close_button{ 
+  font-size: xx-large;
+  color: white;
+  position: absolute;
+  right: 10px;                   
+}
+
+.menu_content{
+  padding: 10px;
+  margin-top: 20px;
+}
+
+@media(min-width: 768px){ 
+  .menu{
+      width: 20vw; 
+  }
+
+  .menu_closed{
+      left:-20vw;
+  }
+}
+
+/*perfil de usuario*/
+#profile {
+  text-align: center;
+}
+
+#photoProfile {
+  border-radius: 100%; 
+}
+
