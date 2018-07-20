@@ -56,9 +56,4 @@ function users() {
   });
 
   configUser.style.display = "none";
-
-
-
-
 }
-

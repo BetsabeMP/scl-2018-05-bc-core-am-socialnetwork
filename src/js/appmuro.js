@@ -17,9 +17,9 @@ firebase.database().ref('messages')
       `<div class="container">
         <div style = "background-color: #E8910C" class="p-2 mb-3">
           <p class="m-0">Autor: ${newMessage.val().creatorName}</p>
-          <p class="m-0" dataKeyEdit="${newMessage.key}">Mensaje<br>${newMessage.val().text}</p>
+          <p class="m-0">Mensaje<br>${newMessage.val().text}</p>
             <i class="fas fa-star p-1 pb-1" dataKey="${newMessage.key}" onclick="starPost(event)"></i><span>${newMessage.val().stars}</span>
-            <i class="far fa-edit p-1 pb-1" onclick="editPost(event)">
+            <i class="far fa-edit p-1 pb-1" dataKey="${newMessage.key}" onclick="editPost(event)">
             </i>
             <i class="fas fa-trash-alt p-1 pb-1" dataKey="${newMessage.key}" onclick="deletePost(event)"></i>
         </div>
@@ -29,7 +29,7 @@ firebase.database().ref('messages')
 //Función para editar el mensaje.
 function editSendMessage(event) {
   event.stopPropagation();
-  const keyPostToEdit = event.target.getAttribute('dataKeyEdit');
+  const keyPostToEdit = event.getElementByID('dataKey');
   text = editMessageBox.value
   data = { text }
   firebase.database().ref('messages/').child(keyPostToEdit).update(data);
