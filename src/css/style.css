@@ -14,6 +14,11 @@ button {
   background-color: #E8910C;
 }
 
+.buttonWall {
+  border-radius: 3px;
+  background-color: #E8910C;
+}
+
 /*login*/
 .btns {
   width: 95%;

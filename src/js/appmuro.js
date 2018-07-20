@@ -15,7 +15,7 @@ firebase.database().ref('messages')
     wallMessages.appendChild(messageContainer)
     messageContainer.innerHTML +=
       `<div class="container">
-        <div style = "background-color: #E8910C" class="mb-3">
+        <div style = "background-color: #E8910C" class="p-2 mb-3">
           <p class="m-0">Autor: ${newMessage.val().creatorName}</p>
           <p class="m-0" dataKeyEdit="${newMessage.key}">Mensaje<br>${newMessage.val().text}</p>
             <i class="fas fa-star p-1 pb-1" dataKey="${newMessage.key}" onclick="starPost(event)"></i><span>${newMessage.val().stars}</span>
