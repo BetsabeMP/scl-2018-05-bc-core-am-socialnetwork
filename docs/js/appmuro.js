@@ -1,3 +1,9 @@
+window.onload = () => {
+  sendMessage();
+  editSendMessage();
+  deletePost();
+  starPost();
+}
 firebase.database().ref('messages')
   .limitToLast(10) // Filtro para no obtener todos los mensajes
   .once('value')
