@@ -1,4 +1,4 @@
-# Red Social
+# Red Social: Chao Bullying
 ## Introducción
 Aplicación en la que se puede escribir en un muro, editar y borrar éstos mensajes. Éstos, se guardan en una database lo que permite que sean permanentes. También muestra un perfil de la persona que ingresa.
 ## Instrucciones
